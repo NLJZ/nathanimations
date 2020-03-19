@@ -11,14 +11,16 @@
 }
 
 body {
-  padding-top: 2rem;
+  padding: 2rem;
+  background-color: #222;
 }
 
 h1 {
-  font-family: "Anton", sans-serif;
+  /* font-family: "Anton", sans-serif; */
   font-size: 4rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+  padding-top: 2rem;
 }
 
 h3 {
@@ -42,18 +44,30 @@ p {
   font-size: 2rem;
 }
 
+.wrapper {
+  height: 100%;
+  min-height: 95vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: max-content;
+  margin: 0 auto;
+}
+
 header {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 100%;
+  max-width: 80rem;
 }
 
 main {
   max-width: 80rem;
   display: flex;
   flex-wrap: wrap;
-  margin: 5rem auto;
+  margin: 1rem auto;
 }
 
 .line-holder {
@@ -84,6 +98,48 @@ main {
   left: 1rem;
   border-radius: 0.4rem;
 }
+
+/* ANIMATIONS START HERE */
+
+/* #nathan {
+  animation: 1s ease-out 0s 1 forwards fromleft;
+  transform: translateX(-300%);
+  color: #222;
+}
+
+#imations {
+  animation: 1s ease-out 0s 1 forwards fromright;
+  transform: translateX(300%);
+  color: #222;
+} */
+
+/* @keyframes fromleft {
+  0% {
+    transform: translateX(-300%) skewX(160deg);
+    color: #222;
+  }
+  98% {
+    transform: skewX(160deg);
+    color: red;
+  }
+  100% {
+    transform: translateX(0) skewX(180deg);
+  }
+}
+
+@keyframes fromright {
+  0% {
+    transform: translateX(300%) skewX(20deg);
+  }
+  98% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: translateX(0) skewX(180deg);
+  }
+} */
+
+/* two lines become an x */
 
 .line-holder:hover .make-an-x.line-one {
   animation-name: make-an-x-one;
