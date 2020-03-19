@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+  font-family: "Work Sans", sans-serif;
+  color: #222;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  flex: 0 0 100%;
+  margin: 2rem;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+main {
+  max-width: 90rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem auto;
+}
+
+.line-holder {
+  width: 8rem;
+  height: 8rem;
+  background-color: steelblue;
+  margin: 2rem;
+  position: relative;
+}
+
+.line-one {
+  width: 6rem;
+  height: 0.4rem;
+  background-color: #fff;
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
+  border-radius: 0.4rem;
+}
+
+.line-two {
+  width: 6rem;
+  height: 0.4rem;
+  background-color: #fff;
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+  border-radius: 0.4rem;
+}
+
+.line-holder:hover .line-one {
+  animation-name: make-an-x-one;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.line-holder:hover .line-two {
+  animation-name: make-an-x-two;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes make-an-x-one {
+  from {
+    top: 3rem;
+    transform: rotate(0deg);
+  }
+
+  to {
+    top: 4rem;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes make-an-x-two {
+  from {
+    top: 3rem;
+    transform: rotate(0deg);
+  }
+
+  to {
+    top: 4rem;
+    transform: rotate(-45deg);
+  }
+}
