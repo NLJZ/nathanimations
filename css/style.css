@@ -243,3 +243,49 @@ main {
     top: 4rem;
   }
 }
+
+.line-holder:hover .spin-into-x.line-one {
+  animation-name: spin-into-x-one;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.line-holder:hover .spin-into-x.line-two {
+  animation-name: spin-into-x-two;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spin-into-x-one {
+  0% {
+    top: 3rem;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    top: 4rem;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes spin-into-x-two {
+  0% {
+    top: 5rem;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    top: 4rem;
+    transform: rotate(-45deg);
+  }
+}
