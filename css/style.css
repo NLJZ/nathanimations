@@ -10,6 +10,10 @@
   color: #222;
 }
 
+body {
+  padding-top: 2rem;
+}
+
 h1 {
   font-family: "Anton", sans-serif;
   font-size: 4rem;
@@ -49,6 +53,7 @@ main {
   background-color: steelblue;
   margin: 2rem;
   position: relative;
+  overflow: hidden;
 }
 
 .line-one {
@@ -99,7 +104,7 @@ main {
 
 @keyframes make-an-x-two {
   from {
-    top: 3rem;
+    top: 5rem;
     transform: rotate(0deg);
   }
 
@@ -186,5 +191,55 @@ main {
   to {
     top: 4rem;
     transform: rotate(-135deg);
+  }
+}
+
+.line-holder:hover .exit-return-as-x.line-one {
+  animation-name: exit-return-as-x-one;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.line-holder:hover .exit-return-as-x.line-two {
+  animation-name: exit-return-as-x-two;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes exit-return-as-x-one {
+  0% {
+    top: 3rem;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    top: -3rem;
+    left: -6rem;
+    transform: rotate(60deg);
+  }
+
+  100% {
+    top: 4rem;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes exit-return-as-x-two {
+  0% {
+    top: 5rem;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    top: 11rem;
+    left: -6rem;
+    transform: rotate(-60deg);
+  }
+
+  100% {
+    transform: rotate(-45deg);
+    top: 4rem;
   }
 }
