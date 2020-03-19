@@ -131,8 +131,8 @@ main {
   }
 
   to {
-    top: 4rem;
-    transform: rotate(45deg) scale(1.2);
+    top: 3.8rem;
+    transform: rotate(45deg);
     height: 0.8rem;
   }
 }
@@ -145,8 +145,8 @@ main {
   }
 
   to {
-    top: 4rem;
-    transform: rotate(-45deg) scale(1.2);
+    top: 3.8rem;
+    transform: rotate(-45deg);
     height: 0.8rem;
   }
 }
