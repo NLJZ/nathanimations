@@ -50,7 +50,7 @@ main {
 .line-holder {
   width: 8rem;
   height: 8rem;
-  background-color: steelblue;
+  background-color: #222;
   margin: 2rem;
   position: relative;
   overflow: hidden;
