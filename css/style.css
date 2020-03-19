@@ -29,10 +29,13 @@ h3 {
 
 h2 {
   flex: 0 0 100%;
-  margin: 2rem;
+  margin: 2rem 0rem;
   font-size: 2rem;
-  text-decoration: underline;
   font-weight: normal;
+  background-color: #222;
+  color: #fff;
+  padding-left: 1rem;
+  max-width: 80rem;
 }
 
 p {
@@ -47,7 +50,7 @@ header {
 }
 
 main {
-  max-width: 90rem;
+  max-width: 80rem;
   display: flex;
   flex-wrap: wrap;
   margin: 5rem auto;
@@ -57,7 +60,7 @@ main {
   width: 8rem;
   height: 8rem;
   background-color: #222;
-  margin: 2rem;
+  margin: 1rem;
   position: relative;
   overflow: hidden;
 }
