@@ -1,2 +1,2 @@
-# NathAnimations
+# NATHANIMATIONS
 CSS Animations by Nathan
