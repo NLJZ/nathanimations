@@ -21,6 +21,12 @@ h1 {
   text-transform: uppercase;
 }
 
+h3 {
+  color: #fff;
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+}
+
 h2 {
   flex: 0 0 100%;
   margin: 2rem;
