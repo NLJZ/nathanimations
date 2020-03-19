@@ -70,14 +70,14 @@ main {
   border-radius: 0.4rem;
 }
 
-.line-holder:hover .line-one {
+.line-holder:hover .make-an-x.line-one {
   animation-name: make-an-x-one;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
 
-.line-holder:hover .line-two {
+.line-holder:hover .make-an-x.line-two {
   animation-name: make-an-x-two;
   animation-duration: 1s;
   animation-fill-mode: forwards;
