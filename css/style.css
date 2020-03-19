@@ -343,36 +343,33 @@ main {
   }
 }
 
-.line-holder:hover .fly-out-over-back-as-x.line-one {
-  animation-name: fly-out-over-back-as-x-one;
-  animation-duration: 2s;
+.line-holder:hover .disappear-back-as-x.line-one {
+  animation-name: disappear-back-as-x-one;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
 
-.line-holder:hover .fly-out-over-back-as-x.line-two {
-  animation-name: fly-out-over-back-as-x-two;
-  animation-duration: 2s;
+.line-holder:hover .disappear-back-as-x.line-two {
+  animation-name: disappear-back-as-x-two;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
 
-@keyframes fly-out-over-back-as-x-one {
+@keyframes disappear-back-as-x-one {
   0% {
     top: 3rem;
     transform: rotate(0deg);
   }
 
-  25% {
-    top: -8rem;
-    transform: scale(2);
-  }
-
-  40% {
+  30% {
+    top: 4rem;
+    transform: scale(25);
     opacity: 0;
   }
 
-  50% {
+  40% {
     top: 2rem;
     transform: scale(0.1) rotate(-90deg) skewX(45deg);
     opacity: 0;
@@ -385,22 +382,19 @@ main {
   }
 }
 
-@keyframes fly-out-over-back-as-x-two {
+@keyframes disappear-back-as-x-two {
   0% {
     top: 5rem;
     transform: rotate(0deg);
   }
 
-  25% {
-    top: 16rem;
-    transform: scale(2);
-  }
-
-  40% {
+  30% {
+    top: 4rem;
+    transform: scale(25);
     opacity: 0;
   }
 
-  50% {
+  40% {
     top: 6rem;
     transform: scale(0.1) rotate(90deg) skewX(45deg);
     opacity: 0;
