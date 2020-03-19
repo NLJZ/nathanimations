@@ -22,6 +22,7 @@ h2 {
   margin: 2rem;
   font-size: 2rem;
   text-decoration: underline;
+  font-weight: normal;
 }
 
 p {
@@ -105,5 +106,85 @@ main {
   to {
     top: 4rem;
     transform: rotate(-45deg);
+  }
+}
+
+.line-holder:hover .make-a-thicker-x.line-one {
+  animation-name: make-a-thicker-x-one;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.line-holder:hover .make-a-thicker-x.line-two {
+  animation-name: make-a-thicker-x-two;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes make-a-thicker-x-one {
+  from {
+    top: 3rem;
+    transform: rotate(0deg);
+    height: 0.4rem;
+  }
+
+  to {
+    top: 4rem;
+    transform: rotate(45deg) scale(1.2);
+    height: 0.8rem;
+  }
+}
+
+@keyframes make-a-thicker-x-two {
+  from {
+    top: 3rem;
+    transform: rotate(0deg);
+    height: 0.4rem;
+  }
+
+  to {
+    top: 4rem;
+    transform: rotate(-45deg) scale(1.2);
+    height: 0.8rem;
+  }
+}
+
+.line-holder:hover .cross-paths-into-x.line-one {
+  animation-name: cross-paths-into-x-one;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.line-holder:hover .cross-paths-into-x.line-two {
+  animation-name: cross-paths-into-x-two;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes cross-paths-into-x-one {
+  from {
+    top: 3rem;
+    transform: rotate(0deg);
+  }
+
+  to {
+    top: 4rem;
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes cross-paths-into-x-two {
+  from {
+    top: 3rem;
+    transform: rotate(0deg);
+  }
+
+  to {
+    top: 4rem;
+    transform: rotate(-135deg);
   }
 }
