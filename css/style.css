@@ -1,3 +1,5 @@
+/* SITEWIDE STYLES */
+
 * {
   margin: 0;
   padding: 0;
@@ -68,7 +70,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   margin: 1rem auto;
+  justify-content: space-around;
 }
+
+/* BOXES WITH LINES */
 
 .line-holder {
   width: 8rem;
@@ -99,58 +104,39 @@ main {
   border-radius: 0.4rem;
 }
 
+/* CIRCLES */
+
+.circle {
+  width: 8rem;
+  height: 8rem;
+  background-color: #222;
+  margin: 1rem;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle h3 {
+  margin: 0;
+}
+
 /* ANIMATIONS START HERE */
-
-/* #nathan {
-  animation: 1s ease-out 0s 1 forwards fromleft;
-  transform: translateX(-300%);
-  color: #222;
-}
-
-#imations {
-  animation: 1s ease-out 0s 1 forwards fromright;
-  transform: translateX(300%);
-  color: #222;
-} */
-
-/* @keyframes fromleft {
-  0% {
-    transform: translateX(-300%) skewX(160deg);
-    color: #222;
-  }
-  98% {
-    transform: skewX(160deg);
-    color: red;
-  }
-  100% {
-    transform: translateX(0) skewX(180deg);
-  }
-}
-
-@keyframes fromright {
-  0% {
-    transform: translateX(300%) skewX(20deg);
-  }
-  98% {
-    transform: skewX(20deg);
-  }
-  100% {
-    transform: translateX(0) skewX(180deg);
-  }
-} */
 
 /* two lines become an x */
 
 .line-holder:hover .make-an-x.line-one {
   animation-name: make-an-x-one;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
 
 .line-holder:hover .make-an-x.line-two {
   animation-name: make-an-x-two;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -181,14 +167,14 @@ main {
 
 .line-holder:hover .make-a-thicker-x.line-one {
   animation-name: make-a-thicker-x-one;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
 
 .line-holder:hover .make-a-thicker-x.line-two {
   animation-name: make-a-thicker-x-two;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -209,7 +195,7 @@ main {
 
 @keyframes make-a-thicker-x-two {
   from {
-    top: 3rem;
+    top: 5rem;
     transform: rotate(0deg);
     height: 0.4rem;
   }
@@ -330,6 +316,7 @@ main {
   }
 
   50% {
+    top: 3rem;
     transform: rotate(360deg);
   }
 
@@ -346,11 +333,12 @@ main {
   }
 
   50% {
+    top: 5rem;
     transform: rotate(360deg);
   }
 
   100% {
     top: 4rem;
-    transform: rotate(-45deg);
+    transform: rotate(315deg);
   }
 }
