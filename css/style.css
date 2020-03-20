@@ -201,8 +201,8 @@ main {
   }
 
   to {
-    top: 3.8rem;
-    transform: rotate(45deg);
+    top: 4rem;
+    transform: rotate(-45deg);
     height: 0.8rem;
   }
 }
@@ -215,8 +215,8 @@ main {
   }
 
   to {
-    top: 3.8rem;
-    transform: rotate(-45deg);
+    top: 4rem;
+    transform: rotate(45deg);
     height: 0.8rem;
   }
 }
@@ -442,7 +442,7 @@ main {
     opacity: 1;
   }
 
-  49% {
+  39% {
     top: 3rem;
     opacity: 0;
     transform: rotate(0deg);
@@ -519,7 +519,7 @@ main {
     left: 10rem;
   }
 
-  75% {
+  70% {
     top: -8rem;
     right: 0rem;
     transform: rotate(-45deg);
@@ -549,7 +549,7 @@ main {
     transform: rotate(45deg);
   }
 
-  75% {
+  70% {
     top: 16rem;
     left: 0rem;
     transform: rotate(45deg);
