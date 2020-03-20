@@ -420,3 +420,143 @@ main {
     opacity: 1;
   }
 }
+
+.line-holder:hover .fade-out-lines-fade-in-x.line-one {
+  animation-name: fade-out-lines-fade-in-x-one;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.line-holder:hover .fade-out-lines-fade-in-x.line-two {
+  animation-name: fade-out-lines-fade-in-x-two;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out-lines-fade-in-x-one {
+  0% {
+    top: 3rem;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  49% {
+    top: 3rem;
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    opacity: 0;
+    top: 4rem;
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    top: 4rem;
+    opacity: 1;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes fade-out-lines-fade-in-x-two {
+  0% {
+    top: 5rem;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  49% {
+    top: 5rem;
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  50% {
+    top: 4rem;
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+
+  100% {
+    top: 4rem;
+    opacity: 1;
+    transform: rotate(45deg);
+  }
+}
+
+.line-holder:hover .slide-out-side-slide-in-top-bottom-x.line-one {
+  animation-name: slide-out-side-slide-in-top-bottom-x-one;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.line-holder:hover .slide-out-side-slide-in-top-bottom-x.line-two {
+  animation-name: slide-out-side-slide-in-top-bottom-x-two;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-out-side-slide-in-top-bottom-x-one {
+  0% {
+    top: 3rem;
+    transform: rotate(0deg);
+  }
+
+  40% {
+    top: 3rem;
+    left: 10rem;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    top: -8rem;
+    transform: rotate(-45deg);
+    left: 10rem;
+  }
+
+  75% {
+    top: -8rem;
+    right: 0rem;
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    top: 4rem;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes slide-out-side-slide-in-top-bottom-x-two {
+  0% {
+    top: 5rem;
+    transform: rotate(0deg);
+  }
+
+  40% {
+    top: 5rem;
+    left: -10rem;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    top: 16rem;
+    left: -10rem;
+    transform: rotate(45deg);
+  }
+
+  75% {
+    top: 16rem;
+    left: 0rem;
+    transform: rotate(45deg);
+  }
+
+  100% {
+    top: 4rem;
+    transform: rotate(45deg);
+  }
+}
