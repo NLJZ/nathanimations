@@ -336,7 +336,7 @@ main {
 
   100% {
     top: 4rem;
-    transform: rotate(45deg);
+    transform: rotate(585deg);
   }
 }
 
@@ -353,7 +353,7 @@ main {
 
   100% {
     top: 4rem;
-    transform: rotate(315deg);
+    transform: rotate(135deg);
   }
 }
 
