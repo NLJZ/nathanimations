@@ -26,7 +26,7 @@ h1 {
 }
 
 h3 {
-  color: #ddf5f3;
+  color: #fff;
   margin-left: 1rem;
   margin-top: 0.4rem;
 }
@@ -37,7 +37,7 @@ h2 {
   font-size: 2rem;
   font-weight: normal;
   background-color: #222;
-  color: #ddf5f3;
+  color: #fff;
   padding-left: 1rem;
   max-width: 80rem;
 }
@@ -63,7 +63,7 @@ p {
 .wrapper {
   height: 100%;
   min-height: 95vh;
-  background-color: #ddf5f3;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,7 +101,7 @@ main {
 .line-one {
   width: 6rem;
   height: 0.4rem;
-  background-color: #ddf5f3;
+  background-color: #fff;
   position: absolute;
   top: 3rem;
   left: 1rem;
@@ -111,7 +111,7 @@ main {
 .line-two {
   width: 6rem;
   height: 0.4rem;
-  background-color: #ddf5f3;
+  background-color: #fff;
   position: absolute;
   top: 5rem;
   left: 1rem;
